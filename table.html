@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar HTML</title>
+</head>
+<body>
+    <H1>Data Penjualan warung Semeru</H1>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Menambahkan warna pada baris judul dan baris total */
+        th[rowspan="2"] {
+            background-color: red;
+            color: white;
+        }
+
+        th[colspan="7"] {
+            background-color: blue;
+            color: white;
+        }
+
+        /* Menambahkan warna pada baris subtotal */
+        tr:last-child th {
+            background-color: red;
+            color: white;
+        }
+    </style>
+    <table border="3" cellpadding="10" cellspacing="0">
+        <th rowspan="2" bgcolor="red">Pesanan</th>
+        <th colspan="7" bgcolor="blue">Hari</th>
+        
+            
+        <tr>
+            <td>Harga</td>
+            <td>Senin</td>
+            <td>Selasa</td>
+            <td>Rabu</td>
+            <td>Kamis</td>
+            <td>Jumat</td>
+            <td>Sabtu</td>
+        </tr>
+
+        <tr>
+            <td>Ayam Sambel Ijo</td>
+            <td>Rp 32.000</td>
+            <td>17</td>
+            <td>26</td>
+            <td>19</td>
+            <td>40</td>
+            <td>34</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Pecel Lele</td>
+            <td>Rp 30.000</td>
+            <td>36</td>
+            <td>16</td>
+            <td>35</td>
+            <td>20</td>
+            <td>32</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>Ayam Bakar</td>
+            <td>Rp 25.000</td>
+            <td>13</td>
+            <td>17</td>
+            <td>18</td>
+            <td>29</td>
+            <td>33</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Bebek Madura</td>
+            <td>Rp 23.000</td>
+            <td>14</td>
+            <td>29</td>
+            <td>12</td>
+            <td>17</td>
+            <td>32</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Lalapan</td>
+            <td>Rp 30.000</td>
+            <td>31</td>
+            <td>26</td>
+            <td>10</td>
+            <td>20</td>
+            <td>34</td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td>Sate Brutu</td>
+            <td>Rp 27.000</td>
+            <td>14</td>
+            <td>36</td>
+            <td>29</td>
+            <td>10</td>
+            <td>14</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Mujaer Bakar</td>
+            <td>Rp 28.000</td>
+            <td>17</td>
+            <td>16</td>
+            <td>29</td>
+            <td>27</td>
+            <td>37</td>
+            <td>10</td>
+        </tr>
+
+            <tr>
+                <th colspan="2" bgcolor="red">Jumlah</th>
+                <td>142</td>
+                <td>166</td>
+                <td>152</td>
+                <td>163</td>
+                <td>216</td>
+                <td>115</td>
+               
+            </tr>
+    </table>
+</body>
+</html>
